@@ -40,6 +40,15 @@ html, body {
     margin: 1rem auto;
 }
 
-.auth-pwd-link {
+.auth-password-link {
     margin-bottom: 1rem;
 }
+
+.auth-link {
+    color: #8bc34a;
+}
+
+p {
+    color: #909090;
+}
+
