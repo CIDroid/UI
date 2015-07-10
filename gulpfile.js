@@ -10,7 +10,7 @@ gulp.task('serve', function () {
         }
     });
 
-    gulp.watch('./public/*.html')
+    gulp.watch('./public/**/*')
     	.on('change', browserSync.reload);
 });
 
