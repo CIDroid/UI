@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CIDroid</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="green darken-2">
+
+<div class="auth-wrapper">
+  <div class="auth-container center-align">
+    <div class="row">
+
+      <div class="col s12 m12 z-depth-2 white">
+
+        <h1 class="auth-header">Sign In</h1>
+
+        <div class="auth-form">
+          <div class="auth-oauth center-align">
+            <button class="auth-social-btn waves-effect waves-light btn-large light-green darken-3" id="auth-google"
+                    name="google">
+              <i class="fa fa-github left"></i>Sign in with GitHub
+            </button>
+          </div>
+
+          <div class="auth-sep row">
+            <div class="col s6 offset-s3 center-align">
+              <strong>OR</strong>
+            </div>
+          </div>
+
+          <div class="auth-form-body">
+            <form role="form" id="auth-pwd-form" novalidate="" action="index.html">
+              <div class="auth-input input-field">
+                <label for="auth-field-email">
+                  Email
+                </label>
+                <input type="email" class="validate" id="auth-field-email" name="auth-field-email"
+                       autocapitalize="none" autocorrect="off">
+              </div>
+
+
+              <div class="auth-input input-field">
+                <label for="auth-field-password">
+                  Password
+                </label>
+                <input type="password" class="validate" id="auth-field-password" name="auth-field-password"
+                       autocapitalize="none" autocorrect="off">
+              </div>
+
+              <div class="auth-pwd-link">
+                <p class="center-align"><a href="forget-password.html" id="auth-forgotPwd" class="auth-link auth-pwd">
+                  Forgot your password?</a></p>
+              </div>
+
+              <button type="submit" class="auth-btn submit waves-effect waves-light btn light-green darken-3"
+                      id="auth-btn">
+                Sign In
+              </button>
+            </form>
+          </div>
+
+
+          <div class="auth-sign-up-link">
+            <p>
+              Don't have an account?
+              <a href="sing-up.html" id="auth-sign-up" class="auth-link auth-sign-up">Sign up</a>
+
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+</body>
+</html>
